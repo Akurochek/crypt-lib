@@ -1,7 +1,7 @@
 """Пример: XOR с ключом по битам."""
 import sys, os
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-import crypt
+import crypto_enu as crypt
 
 msg, key = "110100111010", "1010"
 enc = crypt.xor(msg, key)

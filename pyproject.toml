@@ -3,9 +3,9 @@ requires = ["setuptools>=61"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "crypto-edu"
-version = "0.1.0"
-description = "Учебная криптобиблиотека: паддинги, S/P-блоки, DES/AES/ГОСТ, режимы, хэши, классические шифры и криптоанализ"
+name = "crypto-enu"
+version = "0.2.0"
+description = "Учебная криптобиблиотека: паддинги, DES/AES/ГОСТ, режимы, SHA-2/SHA-3/Стрибог, RSA, ECC, ГОСТ 34.10, классические шифры и криптоанализ"
 readme = "README.md"
 license = "MIT"
 requires-python = ">=3.10"
@@ -16,4 +16,4 @@ keywords = ["cryptography", "education", "gost", "aes", "padding"]
 Homepage = "https://github.com/Akurochek/crypt-lib"
 
 [tool.setuptools]
-packages = ["crypt"]
+packages = ["crypto_enu"]

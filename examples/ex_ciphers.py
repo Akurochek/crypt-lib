@@ -1,7 +1,7 @@
 """Пример: блочные шифры и режимы. Видно, почему ECB плох: одинаковые блоки -> одинаковый шифртекст."""
 import sys, os
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-import crypt
+import crypto_enu as crypt
 
 msg = b"ATTACK AT DAWN!!" * 3 + b"ok"          # три одинаковых блока по 16 байт
 key = bytes(range(32))

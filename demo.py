@@ -1,4 +1,4 @@
-import crypt
+import crypto_enu as crypt
 
 msg = "1101"
 print("Сообщение (биты):", msg, "\n")

@@ -1,7 +1,7 @@
 """Пример: S-блок (подстановка) и обратный S-блок по битам."""
 import sys, os
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-import crypt
+import crypto_enu as crypt
 
 print("Таблица S-блока PRESENT (вход -> выход):")
 for i, v in enumerate(crypt.PRESENT_SBOX):

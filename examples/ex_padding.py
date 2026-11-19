@@ -1,7 +1,7 @@
 """Пример: паддинг сообщения по битам и нарезка на блоки."""
 import sys, os
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-import crypt
+import crypto_enu as crypt
 
 msg = "1101001"
 print(f"Исходное сообщение: {msg} ({len(msg)} бит)\n")

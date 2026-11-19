@@ -1,7 +1,7 @@
 """Пример: классические шифры и их взлом частотным анализом."""
 import sys, os
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-import crypt
+import crypto_enu as crypt
 from test_crypt import RU_TEXT
 
 print("Цезарь:     ", crypt.caesar("Привет, мир!", 3))

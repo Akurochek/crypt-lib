@@ -2,7 +2,7 @@
 со сверкой по эталонным векторам из стандартов."""
 import sys, os
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-import crypt
+import crypto_enu as crypt
 
 print("Стандартные S-блоки:")
 for name, desc in crypt.SBOXES.items():

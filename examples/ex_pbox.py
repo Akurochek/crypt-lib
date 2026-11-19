@@ -1,7 +1,7 @@
 """Пример: P-блок (перестановка битов) и обратный P-блок."""
 import sys, os
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-import crypt
+import crypto_enu as crypt
 
 perm = [3, 2, 1, 0]
 d = "1100"

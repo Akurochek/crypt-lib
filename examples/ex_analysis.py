@@ -1,7 +1,7 @@
 """Пример: сравнение S-блоков и лавинный эффект шифров."""
 import sys, os
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-import crypt
+import crypto_enu as crypt
 
 print(f"{'S-блок':11} {'бит':>3} {'дифф.равн.':>10} {'нелин.':>6} {'степень':>7}  неподвижные точки")
 for name in ("aes", "kuznyechik", "present", "gift"):

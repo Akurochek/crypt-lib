@@ -1,4 +1,4 @@
-"""Хэш-функции «с нуля» поверх дополнения из crypt/padding.py (схемы "sha2" и "md5"),
+"""Хэш-функции «с нуля» поверх дополнения из crypto_enu/padding.py (схемы "sha2" и "md5"),
 SHA-2 (224/256/384/512, 512/t), SHA-3/SHAKE/Keccak (губка), Стрибог (ГОСТ Р 34.11-2012),
 плюс HMAC, PBKDF2 и HKDF. Сверяются с hashlib и векторами стандартов в тестах.
 
@@ -228,7 +228,7 @@ def keccak_f(a):
 
 
 def keccak_sponge(data: bytes, rate_bits: int, out_len: int, scheme: str = "sha3") -> bytes:
-    """Губка: впитываем блоки по rate бит (паддинг из crypt/padding.py), потом выжимаем out_len байт."""
+    """Губка: впитываем блоки по rate бит (паддинг из crypto_enu/padding.py), потом выжимаем out_len байт."""
     r = rate_bits // 8
     m = pad(bytes(data), rate_bits, scheme)
     a = [[0] * 5 for _ in range(5)]

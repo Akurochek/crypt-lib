@@ -1,7 +1,7 @@
-"""Блочные шифры, собранные из таблиц библиотеки (crypt/sbox.py, crypt/pbox.py).
+"""Блочные шифры, собранные из таблиц библиотеки (crypto_enu/sbox.py, crypto_enu/pbox.py).
 
 Каждый шифр — класс с полями block_size (байт) и методами encrypt_block / decrypt_block
-над ровно одним блоком bytes. Режимы (CBC, CTR, GCM, ...) — в crypt/modes.py.
+над ровно одним блоком bytes. Режимы (CBC, CTR, GCM, ...) — в crypto_enu/modes.py.
 
     c = crypt.cipher("aes", key)          # или crypt.AES(key)
     c.encrypt_block(b"16 байт ровно!!!")

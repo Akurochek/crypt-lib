@@ -5,7 +5,7 @@
     ct = crypt.cbc_encrypt(c, data, iv)          # данные уже кратны блоку
     pt = crypt.cbc_decrypt(c, ct, iv)
 
-Высокий уровень — сам дополнит (padding из crypt/padding.py), сгенерирует IV и допишет его в начало:
+Высокий уровень — сам дополнит (padding из crypto_enu/padding.py), сгенерирует IV и допишет его в начало:
     ct = crypt.encrypt(b"secret", key, "kuznyechik", "cbc")
     crypt.decrypt(ct, key, "kuznyechik", "cbc")  # -> b"secret"
 

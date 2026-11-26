@@ -1,3 +1,21 @@
+"""crypto_enu — учебная криптографическая библиотека на чистом Python.
+
+Паддинги, S/P-блоки, DES/AES/ГОСТ, режимы работы, потоковые шифры, SHA-2/SHA-3/Стрибог,
+RSA, ECC, ГОСТ Р 34.10, классические шифры и криптоанализ.
+
+    import crypto_enu as crypt
+    ct = crypt.encrypt(b"hello", bytes(16), "aes", "cbc")
+    crypt.decrypt(ct, bytes(16), "aes", "cbc")   # b"hello"
+
+Авторы: Мукашев Асет, Мырзабеков Ерасыл, Гадаев Алишер, Рахимжанова Зарина.
+Лицензия: MIT.
+"""
+
+__version__ = "0.2.1"
+__author__ = "Aset Mukashev, Yerassyl Myrzabekov, Alisher Gadayev, Zarina Rakhimzhanova"
+__license__ = "MIT"
+__url__ = "https://github.com/Akurochek/crypt-lib"
+
 from .bits import to_bits, from_bits, group
 from .padding import (SCHEMES, INFO, ALIASES, info, pad, unpad, padded_len, blocks,
                       pad32, pad64, pad128, pad256, pad512, pad1024,

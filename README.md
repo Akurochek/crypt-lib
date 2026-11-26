@@ -11,6 +11,7 @@
 ![Dependencies](https://img.shields.io/badge/зависимости-нет-success)
 ![Tests](https://img.shields.io/badge/тесты-17%20групп%20✓-success)
 ![Standards](https://img.shields.io/badge/стандарты-FIPS%20·%20NIST%20·%20ГОСТ%20·%20RFC-blueviolet)
+![Version](https://img.shields.io/badge/версия-0.2.1-blue)
 ![License](https://img.shields.io/badge/license-MIT-lightgrey)
 
 <img src="docs/img/term_tests.png" width="720" alt="Запуск тестов">
@@ -42,6 +43,8 @@
   - [Анализ стойкости — `analysis`](#9-анализ-стойкости--analysis)
 - [Проверка по стандартам](#проверка-по-стандартам)
 - [Структура проекта](#структура-проекта)
+- [Авторы](#авторы)
+- [Как цитировать](#как-цитировать)
 - [Лицензия](#лицензия)
 
 ---
@@ -383,6 +386,32 @@ crypt-lib/
 
 ---
 
+## Авторы
+
+| | Автор |
+|---|---|
+| 1 | **Мукашев Асет** |
+| 2 | **Мырзабеков Ерасыл** |
+| 3 | **Гадаев Алишер** |
+| 4 | **Рахимжанова Зарина** |
+
+Полный список — в [AUTHORS.md](AUTHORS.md). История версий — в [CHANGELOG.md](CHANGELOG.md),
+правила участия — в [CONTRIBUTING.md](CONTRIBUTING.md).
+
+---
+
+## Как цитировать
+
+```
+Мукашев А., Мырзабеков Е., Гадаев А., Рахимжанова З. crypt-lib: учебная криптографическая
+библиотека на Python [Электронный ресурс]. — Версия 0.2.1. — 2026. —
+URL: https://github.com/Akurochek/crypt-lib
+```
+
+Машиночитаемая ссылка — [CITATION.cff](CITATION.cff) (кнопка «Cite this repository» на GitHub).
+
+---
+
 ## Лицензия
 
-MIT — см. [LICENSE](LICENSE).
+MIT — см. [LICENSE](LICENSE). © 2026 Мукашев Асет, Мырзабеков Ерасыл, Гадаев Алишер, Рахимжанова Зарина.

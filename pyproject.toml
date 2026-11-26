@@ -1,19 +1,49 @@
 [build-system]
-requires = ["setuptools>=61"]
+requires = ["setuptools>=77"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "crypto-enu"
-version = "0.2.0"
+version = "0.2.1"
 description = "Учебная криптобиблиотека: паддинги, DES/AES/ГОСТ, режимы, SHA-2/SHA-3/Стрибог, RSA, ECC, ГОСТ 34.10, классические шифры и криптоанализ"
 readme = "README.md"
 license = "MIT"
+license-files = ["LICENSE", "AUTHORS.md"]
 requires-python = ">=3.10"
-authors = [{ name = "Akurochek" }]
-keywords = ["cryptography", "education", "gost", "aes", "padding"]
+authors = [
+    { name = "Aset Mukashev" },
+    { name = "Yerassyl Myrzabekov" },
+    { name = "Alisher Gadayev" },
+    { name = "Zarina Rakhimzhanova" },
+]
+maintainers = [{ name = "Aset Mukashev" }]
+keywords = ["cryptography", "education", "gost", "aes", "padding", "rsa", "ecc", "sha3", "streebog"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Education",
+    "Intended Audience :: Science/Research",
+    "Natural Language :: Russian",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Education",
+    "Topic :: Security :: Cryptography",
+]
+dependencies = []
+
+[project.optional-dependencies]
+test = ["cryptography"]
+images = ["Pillow"]
 
 [project.urls]
 Homepage = "https://github.com/Akurochek/crypt-lib"
+Repository = "https://github.com/Akurochek/crypt-lib.git"
+Issues = "https://github.com/Akurochek/crypt-lib/issues"
+Changelog = "https://github.com/Akurochek/crypt-lib/blob/main/CHANGELOG.md"
 
 [tool.setuptools]
 packages = ["crypto_enu"]
